@@ -1,0 +1,62 @@
+// Font awesome
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
+// Google font
+@import url('https://fonts.googleapis.com/css?family=Podkova');
+
+// Reset
+@import "reset";
+
+// Helper
+@import "helpers";
+
+
+#main {
+  background: linear-gradient(
+    rgba(58, 209, 255, 0.4),
+    rgba(37, 17, 79, 0.4)
+  ), url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  color: white;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+
+  .avatar {
+    margin-top: 50px;
+    height: 250px;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .sub-title {
+    color: #DCDCDC;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .social-links {
+    display: block;
+    margin-top: 2rem;
+
+    .circle {
+      color: white;
+      font-size: 2rem;
+      text-align: center;
+      transition: all 600ms ease;
+
+      &:hover {
+        color: #008080;
+        transform: scale(.8);
+      }
+
+      &:not(:first-child) {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
