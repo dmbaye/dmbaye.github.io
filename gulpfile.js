@@ -10,7 +10,7 @@ gulp.task('serve', ['sass'], () => {
   });
 
   // gulp.watch('./src/js/*.js', ['js-watch']);
-  gulp.watch('./src/scss/app.scss', ['sass']);
+  gulp.watch('./src/scss/app.scss', ['sass']).on('change', browserSync.reload);
   gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
