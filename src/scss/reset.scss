@@ -11,9 +11,28 @@ body,
   padding: 0;
 }
 
+aside,
+audio,
+canvas,
+footer,
+header,
+hgroup,
+main,
+nav,
+video {
+  display: block;
+}
+
+audio,
+canvas,
 img,
 video {
   max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
 }
 
 h1,

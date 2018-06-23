@@ -44,13 +44,20 @@
 
     .circle {
       color: white;
-      font-size: 2rem;
+      display: inline-block;
+      font-size: 3rem;
       text-align: center;
       transition: all 600ms ease;
 
+      @keyframes pop {
+        from { transform: scale(1) }
+        50% { transform: scale(0.8) }
+        to { transform: scale(1) }
+      }
+
       &:hover {
-        color: #008080;
-        transform: scale(.8);
+        color: #BBBBBB;
+        animation: pop 600ms;
       }
 
       &:not(:first-child) {
@@ -62,6 +69,10 @@
 
 @media only screen and (max-width: 600px) {
   #main {
+    .avatar {
+      height: 178px;
+    }
+
     .title {
       font-size: 2.5rem;
     }
