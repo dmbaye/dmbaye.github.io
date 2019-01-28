@@ -1,3 +1,6 @@
+// Reset
+@import "reset";
+
 // Google font
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
@@ -6,9 +9,6 @@
 
 // Font awesome
 @import "../../node_modules/font-awesome/scss/font-awesome";
-
-// Reset
-@import "reset";
 
 // Helper
 @import "helpers";
@@ -38,7 +38,7 @@
     width: 100%;
 
     .collection-item {
-        width: 25%;
+        width: 33%;
 
         &:not(:first-child) {
             margin-left: 20px;
@@ -114,22 +114,6 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
-    #main {
-        .avatar {
-            height: 178px;
-        }
-
-        .title {
-            font-size: 2.5rem;
-        }
-
-        .sub-title {
-            font-size: 1.2rem;
-        }
-    }
-}
-
 #projects {
     background: linear-gradient(
         $primary,
@@ -140,5 +124,43 @@
 
     h2 {
         margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #main {
+        .row {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 20px 0;
+
+            .col-70 {
+                margin: 0;
+                .sub-title {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .col-30 {
+                margin: 0;
+                text-align: center;
+                .avatar {
+                    height: auto;
+                    width: 400px;
+                    margin: 0 0 40px;
+                }
+            }
+        }
+    }
+
+    #projects {
+        .collection {
+            flex-direction: column;
+
+            .collection-item {
+                margin: 0 0 20px 0;
+                width: 100%;
+            }
+        }
     }
 }
