@@ -1,1 +1,1 @@
-console.log('Welcole to my app');
+console.log('Welcome to my app');
