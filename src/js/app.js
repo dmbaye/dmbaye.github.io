@@ -1,1 +1,1 @@
-console.log('Welcome to my app');
+require('./bootstrap');
