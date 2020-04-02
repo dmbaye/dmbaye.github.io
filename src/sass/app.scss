@@ -1,5 +1,5 @@
 // Google font
-@import url('https://fonts.googleapis.com/css?family=Podkova&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Special+Elite&display=swap');
 
 // Variables
 @import "variables";
@@ -14,71 +14,48 @@
 
 html,
 body {
-    font-family: "Podkova", serif;
+    font-family: "Poiret One", serif;
+    font-weight: 700;
 }
 
-#sidebar {
-    background: $primary;
-    box-shadow: 1px 0px 4px rgba(0,0,0,0.5);
-    color: $white;
-    height: 100%;
-    left: 0;
-    padding: 0 0 0 2rem;
-    position: fixed;
-    top: 0;
-    width: 240px;
-
-    .list {
-        list-style: none;
-        margin: 2rem 0 0 0;
-        padding: 0;
-
-        li {
-            a {
-                color: $white;
-                text-decoration: none;
-
-                &:hover {
-                    color: $warning;
-                }
-            }
-        }
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Special Elite", serif;
+    font-weight: 700;
 }
 
 #main {
-    left: 240px;
-    position: absolute;
-    right: 0;
-    top: 0;
-
     .section {
         padding: 10rem 0;
-        text-align: center;
     }
 
     #about {
-        background: $danger;
+        background: #008080;
         color: $white;
-    }
 
-    #works {
-    }
+        h1 {
+            font-size: 3rem;
+        }
 
-    #resume {
-        background: $warning;
+        p {
+            font-size: 1.3rem;
+        }
 
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
+        img {
+            position: absolute;
+            left: 200px;
+            top: 200px;
+            width: 300px;
         }
     }
 
     #contact {
         .social-links {
             display: flex;
-            justify-content: center;
             list-style: none;
             margin: 0;
             padding: 0;
@@ -88,6 +65,7 @@ body {
                 margin-left: 1rem;
 
                 a {
+                    font-size: 1rem;
                     text-decoration: none;
                 }
             }
@@ -96,25 +74,4 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    #sidebar {
-
-    }
-
-    #main {
-        #about {
-
-        }
-
-        #works {
-
-        }
-
-        #resume {
-
-        }
-
-        #contact {
-
-        }
-    }
 }

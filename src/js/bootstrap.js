@@ -4,3 +4,5 @@ try {
 
   require('bootstrap');
 } catch (e) {}
+
+window.axios = require('axios');
